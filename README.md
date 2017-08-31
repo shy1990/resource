@@ -50,6 +50,7 @@ dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P
 
 
 安装rpm格式文件
+
     $sudo apt-get install alien ##alien默认没有安装，所以首先要安装它
 
     $sudo alien xxxx.rpm  ##将rpm转换为deb,完成后会生成一个xxxx.deb
