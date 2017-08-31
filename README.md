@@ -48,3 +48,10 @@ dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P
  sudo apt-get remove onboard deja-dup   删除基本不用的自带软件
  这样系统基本就干净了
 
+
+安装rpm格式文件
+    $sudo apt-get install alien ##alien默认没有安装，所以首先要安装它
+
+    $sudo alien xxxx.rpm  ##将rpm转换为deb,完成后会生成一个xxxx.deb
+
+    $sudo dpkg -i xxxx.deb ##这样xxxx软件就可以安装完成了
