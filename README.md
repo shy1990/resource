@@ -1,15 +1,18 @@
 # resource
 1.ubuntu挂载硬盘
 df -h    查看挂载
+
 umount /dev/sdb5 dev/sdb8 取消挂载
+
 mkfs.ext4 /dev/sdb或mkfs -t ext4 /dev/sdb 把硬盘格式转化为ext4格式
+
 fdisk /dev/sdb 分区
 n 默认分区
 p 主分区
 1 进行分区
 fdisk -lu 查看分区
 
-sudo mount -t ext4 /dev/sdb /devdata
+sudo mount -t ext4 /dev/sdb /devdata 进行绑定
 说明：
 指定硬盘分区文件系统类型为ext4 ，同时将 /dev/sdb 分区挂载到目录 /devdata。
 
