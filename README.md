@@ -13,6 +13,7 @@ p 主分区
 fdisk -lu 查看分区
 
 sudo mount -t ext4 /dev/sdb /devdata 进行绑定
+
 说明：
 指定硬盘分区文件系统类型为ext4 ，同时将 /dev/sdb 分区挂载到目录 /devdata。
 
